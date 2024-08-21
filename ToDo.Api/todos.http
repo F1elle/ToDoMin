@@ -1,0 +1,21 @@
+POST http://localhost:5205/tasks
+Content-Type: application/json
+
+{
+    "body": "Hello there I'm trying to wtite 250+ symbols so"
+}
+
+###
+GET http://localhost:5205/tasks
+
+###
+PUT http://localhost:5205/tasks/d6101f0b-b62b-4a85-9cce-a285ff7bf6ca
+Content-Type: application/json
+
+{"body": "new text"}
+
+###
+DELETE http://localhost:5205/tasks/1dd1a13c-b118-44f3-b35a-1d0e5aeead0b
+
+###
+PUT http://localhost:5205/tasks/e832ac05-e735-4b2a-8ef3-fafa0a7fd664/mark-important
